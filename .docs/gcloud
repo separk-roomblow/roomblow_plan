@@ -1,0 +1,17 @@
+GAE 프로젝트 등록
+
+참고 https://medium.com/@jwlee98/gcp-gae-%EA%B0%84%EB%8B%A8-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B0%8F-%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%84%A4%EC%A0%95-4c1787b1cfe8
+위 내용 참고하여 https://start.spring.io/ 에서 프로젝트를 만듬
+
+아래의 튜토리얼을 따름
+https://codelabs.developers.google.com/codelabs/cloud-app-engine-springboot/index.html?index=..%2F..%2Findex#0
+
+튜토리얼 방법으로 프로제트를 만들지 않고 https://start.spring.io/ 에서 만듬
+나머지 설정은 튜토리얼 대로 진행
+
+계정설정 gcloud auth list
+초기화 - google-cloud-sdk/bin 가 있는 위치에서  ./google-cloud-sdk/bin/gcloud init
+
+튜토리얼 대로 프로젝트 폴더 내에서  ./mvnw -DskipTests package appengine:deploy 이거는 실행이 안됨
+gcloud app deploy 이것으로 디플로이 성공
+
