@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- saved from url=(0100)https://ovey.kr/ovey/mobile/survey-intro.action?surveyNo=203852&previewKey=pvOuVqi2AJ&simulator=true -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height">
+    <title>짐보관 서비스에 관한 조사 v2.9</title>
+
+    <meta property="og:image" content="https://public.opensurvey.co.kr/og_image/metatag_opensurvey_homepage.png">
+    <meta property="og:image:secure_url" content="https://public.opensurvey.co.kr/og_image/metatag_opensurvey_homepage.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+    <meta property="og:title" content="짐보관 서비스에 관한 조사 v2.9">
+          <meta property="og:description" content="This is a survey preview link.">
+    
+    <script type="text/javascript" async="" src="linkid.js"></script><script async="" src="analytics.js"></script><script src="postcode.v2.js"></script><script charset="UTF-8" type="text/javascript" src="221018.js"></script>
+    <script type="text/javascript" src="messages.js"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+    var pc = false;
+
+    var surveyNo = "203852";
+    if (surveyNo == "") {
+      surveyNo = "";
+    }
+    var lang = "ko";
+    if (lang == "") {
+      lang = "ko";
+    }
+    var auth = "";
+
+    //문항 수
+    var surveylen = parseInt('');
+
+    //현재 position
+    var cur = 1;
+
+    //이전 rank
+    var prevRank = [];
+
+    //정말 마지막 문항에 도달했는가?
+    var isLast = false;
+
+    // 비표시 해야되는 answer들은 건너뜀
+    var skipOrders = [];
+
+    // 프리뷰 용인경우 해당되는 프리뷰 문항 랭크 (previewQuestionRank 없는 경우를 대비한 꼼수가 있음)
+    var previewQuestionRank = '' * 1;
+    var previewKey = 'pvOuVqi2AJ';
+    var encparam = '';
+
+    var stopRetry = false;
+
+    var seed = surveyNo * 10000 + Math.floor((Math.random() * 10000));
+
+    var watch;
+
+    var simulator = false;
+        simulator = true;
+    
+    function entryCheck() {
+      switch (cur) {
+              }
+    }
+</script>
+
+<link rel="stylesheet" type="text/css" href="surveylist.css">
+<script type="text/javascript" src="browser-detect.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="util.js"></script>
+
+<script type="text/javascript">
+    var button_flag = false;
+
+    /* 현재 선택된 설문의 번호 및 이에 연결된 정보를 저장*/
+    var arrayOfSurveyNo = new Array();
+    var arrayOfAndroidLink = new Array();
+    var arrayOfIOSLink = new Array();
+    var auth = "";
+    var currentIndex = 0;
+    var previewKey = "pvOuVqi2AJ";
+    var simulator = "true" == "true";
+    var shortUrl = "";
+    var ticketId = "";
+    var appVersion = "unknown";
+    var isAdmin = "";
+
+    arrayOfSurveyNo.push(203852);
+    arrayOfAndroidLink.push("");
+    arrayOfIOSLink.push("");
+
+    $(window).load(function() {
+        if (simulator == false) {
+            console.log(navigator.userAgent);
+            if (!navigator.userAgent.match(/up.browser|up.link|windows ce|iphone|iemobile|mini|mmp|symbian|midp|wap|phone|pocket|mobile|pda|psp|android/i)){
+                if ($(window).width() >= 700) {
+                  $('.background').css({'background': 'url("/assets/survey/360-640.png") no-repeat', 'padding': '105px 0 100px 0', 'width': '452px', 'margin': '0px auto', 'height': 'initial'});
+                  $('.survey-wrapper').css({'padding': '0', 'width': '360px', 'height': '640px', 'margin': '0px auto', 'overflow-y': 'auto', 'overflow-x': 'hidden'});
+                }
+            }
+        }
+
+        $(".survey-body").css("min-height", $(".survey-wrapper").height() - $(".survey-header").outerHeight() - $(".survey-footer").outerHeight() - 48);
+    });
+
+    /* 앱 설치 체크해야 되는지 여부  */
+    function shouldCheckInstall() {
+        if (arrayOfAndroidLink[currentIndex] != null && arrayOfIOSLink[currentIndex] != null
+                && arrayOfAndroidLink[currentIndex].length > 0  && arrayOfIOSLink[currentIndex].length > 0
+                && appVersion !== 'unknown') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function getSurveyLink() {
+        var linkParam = "/ovey/mobile/survey.action?surveyNo=";
+        var authParam = "&auth=";
+        return linkParam + arrayOfSurveyNo[currentIndex] + authParam + auth;
+    }
+
+    function checkAppInstall() {
+        var androidLink = arrayOfAndroidLink[currentIndex];
+        var iosLink = arrayOfIOSLink[currentIndex];
+        var customLink = "";
+        if (androidLink != iosLink) {
+            customLink = "ovey://checkInstall?ios=" + iosLink + "&android=" + androidLink;
+        } else {
+            customLink = "ovey://checkInstall?link=" + iosLink;
+        }
+        location.href =  customLink;
+    }
+
+    /* 설문 시작 조건 체크 */
+    function checkStartSurvey() {
+        if (button_flag)
+            return;
+
+        button_flag = true;
+        if (shouldCheckInstall() == true) {
+            checkAppInstall();  //인스톨 체크해야 되면 check
+        } else {
+            surveyStart(); //아니면 그냥 설문 시작
+        }
+        button_flag = false;
+    }
+
+    /* 기존에 있던 함수로 설문 시작 */
+    function surveyStart() {
+        var link = getSurveyLink();
+        if (previewKey != "") {
+            link += '&previewKey=' + previewKey;
+        }
+        link = link + '&simulator=' + (simulator? "true" : "false");
+
+        if (ticketId) {
+            link += '&ticketId=' + ticketId;
+        }
+        if (appVersion) {
+            link += "&appVersion=" + appVersion;
+        }
+        if (isAdmin) {
+            link += "&isAdmin=" + isAdmin;
+        }
+
+        location.href = link;
+    }
+</script>
+
+<style>
+    ol, ul {padding-left: 25px;}
+</style>
+
+<div class="background">
+  <div class="survey-wrapper">
+            <div class="survey-body" style="min-height: 376px;">
+      <div class="survey-type-row">
+                  <div class="survey-type survey-type-normal">
+            일반 설문
+          </div>
+              </div>
+      <div class="survey-title-row">짐보관 서비스에 관한 조사 v2.9</div>
+      <div class="survey-desc-row"><p class="fr-tag">안녕하세요.<br>짐보관 서비스에 대한 관심도와 이용의사, 서비스 가격에 대한&nbsp;의견을 수렴하고자 합니다.</p>
+<p class="fr-tag">패널님의 소중한 의견이 큰 도움이 됩니다. 각 질문에는 정답이 없으니 귀하의 경험과 생각을 바탕으로 솔직하게 응답해주세요 :)</p></div>
+
+                      <div class="survey-info-row">
+          <div class="column-2 left-2">
+            응답소요시간
+          </div>
+          <div class="column-2 right-2">
+            2분
+          </div>
+        </div>
+          </div>
+    <div class="survey-footer">
+        <div class="notice">
+          <img src="SURVEY_notice_icon.png">
+                          성실한 응답이 곧 소중한 의견입니다.<br>집중해서 응답해 주세요!
+                    </div>
+                  <div class="start survey-type-normal" onclick="checkStartSurvey();">
+            설문 시작하기
+          </div>
+            </div>
+  </div>
+</div>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-90735082-1', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+ga('set', 'anonymizeIp', true);
+</script>
+
+
+
+</body></html>

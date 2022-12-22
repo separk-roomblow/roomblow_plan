@@ -1,0 +1,194 @@
+/* iCheck plugin Flat skin, blue
+----------------------------------- */
+.icheckbox-opensurvey-xs,
+.iradio-opensurvey-xs {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  background: url('../../_images/common/icheck-opensurvey-xs.png?ver=3') no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.icheckbox-opensurvey-xs {
+  background-position: 0 0;
+}
+.icheckbox-opensurvey-xs.checked {
+  background-position: -18px 0;
+}
+.icheckbox-opensurvey-xs.disabled {
+  background-position: -36px 0;
+  cursor: default;
+}
+.icheckbox-opensurvey-xs.disabled.checked {
+  background-position: -54px 0;
+}
+.iradio-opensurvey-xs {
+  background-position: -72px 0;
+}
+.iradio-opensurvey-xs.checked {
+  background-position: -90px 0;
+}
+.iradio-opensurvey-xs.disabled {
+  background-position: -108px 0;
+  cursor: default;
+}
+.iradio-opensurvey-xs.disabled.checked {
+  background-position: -126px 0;
+}
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox-opensurvey-xs,
+  .iradio-opensurvey-xs {
+    background-image: url('../../_images/common/icheck-opensurvey-xs@2x.png?ver=3');
+    -webkit-background-size: 144px 18px;
+    background-size: 144px 18px;
+  }
+}
+.icheckbox-opensurvey-sm,
+.iradio-opensurvey-sm {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background: url('../../_images/common/icheck-opensurvey-sm.png?ver=3') no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.icheckbox-opensurvey-sm {
+  background-position: 0 0;
+}
+.icheckbox-opensurvey-sm.checked {
+  background-position: -20px 0;
+}
+.icheckbox-opensurvey-sm.disabled {
+  background-position: -40px 0;
+  cursor: default;
+}
+.icheckbox-opensurvey-sm.disabled.checked {
+  background-position: -60px 0;
+}
+.iradio-opensurvey-sm {
+  background-position: -80px 0;
+}
+.iradio-opensurvey-sm.checked {
+  background-position: -100px 0;
+}
+.iradio-opensurvey-sm.disabled {
+  background-position: -120px 0;
+  cursor: default;
+}
+.iradio-opensurvey-sm.disabled.checked {
+  background-position: -140px 0;
+}
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox-opensurvey-sm,
+  .iradio-opensurvey-sm {
+    background-image: url('../../_images/common/icheck-opensurvey-sm@2x.png?ver=3');
+    -webkit-background-size: 160px 20px;
+    background-size: 160px 20px;
+  }
+}
+.icheckbox-opensurvey-md,
+.iradio-opensurvey-md {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url('../../_images/common/icheck-opensurvey-md.png?ver=3') no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.icheckbox-opensurvey-md {
+  background-position: 0 0;
+}
+.icheckbox-opensurvey-md.checked {
+  background-position: -22px 0;
+}
+.icheckbox-opensurvey-md.disabled {
+  background-position: -44px 0;
+  cursor: default;
+}
+.icheckbox-opensurvey-md.disabled.checked {
+  background-position: -66px 0;
+}
+.iradio-opensurvey-md {
+  background-position: -88px 0;
+}
+.iradio-opensurvey-md.checked {
+  background-position: -110px 0;
+}
+.iradio-opensurvey-md.disabled {
+  background-position: -132px 0;
+  cursor: default;
+}
+.iradio-opensurvey-md.disabled.checked {
+  background-position: -154px 0;
+}
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox-opensurvey-md,
+  .iradio-opensurvey-md {
+    background-image: url('../../_images/common/icheck-opensurvey-md@2x.png?ver=3');
+    -webkit-background-size: 176px 22px;
+    background-size: 176px 22px;
+  }
+}
+.icheckbox-opensurvey-lg,
+.iradio-opensurvey-lg {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 27px;
+  height: 27px;
+  background: url('../../_images/common/icheck-opensurvey-lg.png?ver=3') no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.icheckbox-opensurvey-lg {
+  background-position: 0 0;
+}
+.icheckbox-opensurvey-lg.checked {
+  background-position: -29px 0;
+}
+.icheckbox-opensurvey-lg.disabled {
+  background-position: -58px 0;
+  cursor: default;
+}
+.icheckbox-opensurvey-lg.disabled.checked {
+  background-position: -87px 0;
+}
+.iradio-opensurvey-lg {
+  background-position: -116px 0;
+}
+.iradio-opensurvey-lg.checked {
+  background-position: -145px 0;
+}
+.iradio-opensurvey-lg.disabled {
+  background-position: -174px 0;
+  cursor: default;
+}
+.iradio-opensurvey-lg.disabled.checked {
+  background-position: -203px 0;
+}
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 1.25), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox-opensurvey-lg,
+  .iradio-opensurvey-lg {
+    background-image: url('../../_images/common/icheck-opensurvey-lg@2x.png?ver=3');
+    -webkit-background-size: 232px 29px;
+    background-size: 232px 29px;
+  }
+}

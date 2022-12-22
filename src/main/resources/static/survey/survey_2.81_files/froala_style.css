@@ -1,0 +1,150 @@
+/*!
+ * froala_editor v1.2.8 (https://www.froala.com/wysiwyg-editor)
+ * License https://www.froala.com/wysiwyg-editor/terms
+ * Copyright 2014-2015 Froala Labs
+ */
+.froala-view {
+  line-height: 140%;
+}
+.froala-view ul,
+.froala-view ol,
+ul.fr-tag,
+ol.fr-tag {
+  padding-left: 25px;
+}
+.froala-view p,
+p.fr-tag {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+.froala-view p:last-child,
+p.fr-tag:last-child {
+  margin: 0;
+}
+.froala-view h1,
+h1.fr-tag {
+  font-size: 20px;
+  line-height: 1.375;
+  font-weight: 400;
+  margin: 0 0 6px;
+  color: #333;
+}
+.froala-view h2,
+h2.fr-tag {
+  font-size: 18px;
+  line-height: 1.375;
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+.froala-view h3,
+h3.fr-tag {
+  font-size: 17px;
+  line-height: 1.375;
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+.froala-view h4,
+h4.fr-tag {
+  font-size: 16px;
+  line-height: 1.375;
+  font-weight: 400;
+  margin: 0 0 6px;
+  color: #333;
+}
+.froala-view h5,
+h5.fr-tag {
+  font-size: 14px;
+  line-height: 1.375;
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+.froala-view h6,
+h6.fr-tag {
+  font-size: 12px;
+  line-height: 1.375;
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+.froala-view table,
+table.fr-tag {
+  border-collapse: collapse;
+  empty-cells: show;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.froala-view table td,
+table.fr-tag td {
+  border: solid 1px #cccccc;
+  padding: 5px;
+  vertical-align: top;
+}
+.froala-view table td p,
+table.fr-tag td p {
+  font-size: 16px;
+}
+.froala-view table th,
+table.fr-tag th {
+  background: #e6e6e6;
+  border: solid 1px #cccccc;
+  padding: 5px;
+  vertical-align: top;
+}
+img.fr-fil {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  overflow: auto;
+  padding: 10px 10px 10px 3px;
+  float: left !important;
+}
+img.fr-fil.fr-dib {
+  float: none !important;
+  margin-left: 0 !important;
+}
+img.fr-fir {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  overflow: auto;
+  padding: 10px 3px 10px 10px;
+  float: right !important;
+}
+img.fr-fir.fr-dib {
+  float: none !important;
+  margin-right: 0 !important;
+}
+img.fr-fin {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  overflow: auto;
+  float: none;
+}
+img.fr-fin.fr-dib {
+  padding: 10px 0;
+}
+img.fr-dib {
+  vertical-align: top;
+  display: block;
+}
+.styled-element {
+  margin-bottom: 12px;
+  padding: 10px 8px 10px;
+  border-width: 1px;
+  border-color: #979797 !important;
+  font-size: 16px;
+  text-align: center;
+}
+.styled-element.solid {
+  border-style: solid;
+}
+.styled-element.gray-40 {
+  background-color: rgba(215, 215, 215, 0.4) !important;
+}
+.styled-element.dashed {
+  border-style: dashed;
+}
